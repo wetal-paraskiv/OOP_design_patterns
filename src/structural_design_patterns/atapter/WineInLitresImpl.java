@@ -1,9 +1,9 @@
 package structural_design_patterns.atapter;
 
-public class WineInLitres implements WineInLitresInterface{
+public class WineInLitresImpl implements WineInLitresInterface{
     @Override
     public Wine purchaseWine(double quantityInLitres) {
-        System.out.println("Purchasing " + quantityInLitres + " litres iof Wine.");
+        System.out.println("\tPurchasing " + quantityInLitres + " litres of Wine.");
         return new Wine(quantityInLitres);
     }
 }

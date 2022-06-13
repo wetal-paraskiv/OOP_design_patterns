@@ -1,11 +1,14 @@
 package structural_design_patterns.atapter;
 
+import java.text.DecimalFormat;
+
 public class Wine {
-    private double winePrice;
+    private static final DecimalFormat df = new DecimalFormat("0.00");
+    private double totalCost;
 
     public Wine(double quantityInLitres) {
-        this.winePrice = quantityInLitres * 19.99;
-        System.out.println("Your wine order today is: " + winePrice + " USD.");
-        System.out.printf("Thank you for your order!");
+        this.totalCost = quantityInLitres * 19.99;
+        System.out.println("Total cost of today's wine order is: " + df.format(totalCost) + " USD.");
+        System.out.println("Thanks for ordering with our company :)\n");
     }
 }
