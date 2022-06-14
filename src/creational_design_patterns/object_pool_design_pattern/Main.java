@@ -3,6 +3,11 @@ package creational_design_patterns.object_pool_design_pattern;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+/**
+ * The object pool pattern is a software creation-al design pattern that uses a set of initialized objects
+ * kept ready to use – a "pool" – rather than allocating and destroying them on demand.
+ * A client of the pool will request an object from the pool and perform operations on the returned object.
+ */
 public class Main {
     public static void main(String[] args) throws InterruptedException, SQLException {
         String url = "jdbc:mysql://localhost:3306/db_school";
