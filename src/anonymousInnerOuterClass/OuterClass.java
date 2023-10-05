@@ -4,22 +4,22 @@ public class OuterClass {
     public String name = "Outer Class";
 
     public void saySomething() {
-        System.out.println("I am saying something from instance of OUTER Class...");
+        System.out.println("What's up ? instance of " + this.name + "...from..." + this.getClass().getName());
     }
 
-    public class InnerClass{
+    public class InnerClass {
         public String name = "Inner Class";
 
         public void whatsUp() {
-            System.out.println("What's up ? from INNER Class...");
+            System.out.println("What's up ? instance of " + this.name + "...from..." + this.getClass().getName());
         }
     }
 
-    public static class StaticInnerClass{
+    public static class StaticInnerClass {
         public String name = "Static Inner Class";
 
         public void staticWhatsUp() {
-            System.out.println("What's up ? from Static INNER Class...");
+            System.out.println("What's up ? instance of " + this.name + "...from..." + this.getClass().getName());
         }
     }
 

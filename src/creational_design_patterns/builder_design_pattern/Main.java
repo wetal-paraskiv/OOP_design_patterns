@@ -16,17 +16,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Phone phone1 = new Phone("Android", 1200, "Qualcomm", 5.5, 2000);
-        System.out.println(phone1.toString());
+        // using new keyword
+        Phone newPhone = new Phone("Android", 1200, "Qualcomm", 5.5, 2000);
+        System.out.println(newPhone.toString());
 
         // using builder class
-        Phone phone2 = new PhoneBuilder()
+        Phone buildPphone = new PhoneBuilder()
                 .setOs("ANDROID")
                 .setBattery(2400)
                 .setProcessor("Qualcomm")
                 .setScreenSize(6.8)
                 .setRam(4000)
-                .getPhone();
-        System.out.println(phone2.toString());
+                .build();
+        System.out.println(buildPphone.toString());
     }
 }
