@@ -5,7 +5,6 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class CourseRepository implements Iterable<String>{
-
     private int index;
     private String[] courses;
 

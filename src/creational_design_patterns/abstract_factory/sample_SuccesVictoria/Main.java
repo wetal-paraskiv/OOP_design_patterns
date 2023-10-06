@@ -2,6 +2,7 @@ package creational_design_patterns.abstract_factory.sample_SuccesVictoria;
 
 import creational_design_patterns.abstract_factory.sample_SuccesVictoria.factories.FactoryEnum;
 import creational_design_patterns.abstract_factory.sample_SuccesVictoria.factories.FactoryGenerator;
+import creational_design_patterns.abstract_factory.sample_SuccesVictoria.models.AbstractSausage;
 import creational_design_patterns.abstract_factory.sample_SuccesVictoria.models.SausageEnum;
 
 public class Main {

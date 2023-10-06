@@ -1,6 +1,5 @@
 package creational_design_patterns.abstract_factory.sample_SuccesVictoria.models;
 
-import creational_design_patterns.abstract_factory.sample_SuccesVictoria.AbstractSausage;
 import creational_design_patterns.abstract_factory.sample_SuccesVictoria.factories.FactoryEnum;
 
 import java.text.DateFormat;
